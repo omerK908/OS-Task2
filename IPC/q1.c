@@ -31,7 +31,6 @@ void catch_sigusr1(int sig_num)
 void do_son()
 {
    
-   int i;
    sleep(1);
 
    if (val < MAX)
@@ -43,8 +42,6 @@ void do_son()
 void do_dad(pid_t son_pid)
 {
    
-   int i;
-
    //printf("pid of dad = %d, pid of son = %d\n", getpid(), son_pid);
 
    pause();
